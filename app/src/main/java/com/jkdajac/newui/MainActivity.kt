@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import com.bumptech.glide.Glide
+import com.jkdajac.newui.goroskop.GoroskopActivity
 import com.jkdajac.newui.news.NewsActivity
 import com.jkdajac.newui.note.NoteActivity
 import com.jkdajac.newui.radio.RadioActivity
@@ -75,13 +76,13 @@ class MainActivity : AppCompatActivity() {
         clRed.setOnClickListener {
             val animation = AnimationUtils.loadAnimation(this, R.anim.scale)
             clRed.startAnimation(animation)
-            val intent = Intent(this, SmileActivity::class.java)
+            val intent = Intent(this, GoroskopActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.diagonal_translate, R.anim.alpha)
             Glide.with(this)
                 .asGif()
                 .load(R.drawable.med)
-                .into(ivSmile);
+                .into(ivGoroskop);
         }
     }
 }
