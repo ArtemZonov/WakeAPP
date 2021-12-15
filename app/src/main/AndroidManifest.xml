@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewUI">
-        <activity android:name=".news.NewsActivity"></activity>
+        <activity android:name=".goroskop.GoroskopActivity"></activity>
+        <activity android:name=".smile.SmileActivity" />
+        <activity android:name=".news.NewsActivity" />
         <activity android:name=".note.NoteActivity" />
         <activity android:name=".radio.RadioActivity" />
         <activity android:name=".weather.WeatherActivity" />

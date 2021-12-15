@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.jkdajac.newui.news.NewsActivity
 import com.jkdajac.newui.note.NoteActivity
 import com.jkdajac.newui.radio.RadioActivity
+import com.jkdajac.newui.smile.SmileActivity
 import com.jkdajac.newui.weather.WeatherActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         }
         clGreen.setOnClickListener {
             val animation = AnimationUtils.loadAnimation(this, R.anim.scale)
-            clPurple.startAnimation(animation)
+            clGreen.startAnimation(animation)
             val intent = Intent(this, NewsActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.diagonal_translate, R.anim.alpha)
@@ -61,10 +62,26 @@ class MainActivity : AppCompatActivity() {
                 .into(ivNews);
         }
         clViolet.setOnClickListener {
-
+            val animation = AnimationUtils.loadAnimation(this, R.anim.scale)
+            clViolet.startAnimation(animation)
+            val intent = Intent(this, SmileActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.diagonal_translate, R.anim.alpha)
+            Glide.with(this)
+                .asGif()
+                .load(R.drawable.smile)
+                .into(ivSmile);
         }
         clRed.setOnClickListener {
-
+            val animation = AnimationUtils.loadAnimation(this, R.anim.scale)
+            clRed.startAnimation(animation)
+            val intent = Intent(this, SmileActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.diagonal_translate, R.anim.alpha)
+            Glide.with(this)
+                .asGif()
+                .load(R.drawable.med)
+                .into(ivSmile);
         }
     }
 }
