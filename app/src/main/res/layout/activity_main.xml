@@ -194,8 +194,8 @@
 
         <ImageView
             android:id="@+id/ivSmile"
-            android:layout_width="225dp"
-            android:layout_height="156dp"
+            android:layout_width="219dp"
+            android:layout_height="143dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -233,8 +233,8 @@
 
         <ImageView
             android:id="@+id/ivGoroskop"
-            android:layout_width="165dp"
-            android:layout_height="208dp"
+            android:layout_width="152dp"
+            android:layout_height="198dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
