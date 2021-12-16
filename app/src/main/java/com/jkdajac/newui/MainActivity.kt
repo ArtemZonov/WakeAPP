@@ -91,4 +91,11 @@ class MainActivity : AppCompatActivity() {
                 .into(ivGoroskop);
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
+    }
 }

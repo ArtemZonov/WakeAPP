@@ -9,8 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clYellow"
-        android:layout_width="221dp"
-        android:layout_height="210dp"
+        android:layout_width="210dp"
+        android:layout_height="255dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/yellow_screen"
@@ -21,18 +21,18 @@
 
         <ImageView
             android:id="@+id/ivUmbrella"
-            android:layout_width="204dp"
-            android:layout_height="152dp"
+            android:layout_width="0dp"
+            android:layout_height="153dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.047"
+            app:layout_constraintVertical_bias="0.093"
             app:srcCompat="@drawable/restricted" />
 
         <TextView
@@ -40,9 +40,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:fontFamily="@font/dserasercyr1"
             android:text="Погода"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="32sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/ivUmbrella"
@@ -53,7 +54,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clBlue"
         android:layout_width="0dp"
-        android:layout_height="255dp"
+        android:layout_height="300dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/blue_screen"
@@ -66,39 +67,40 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:fontFamily="@font/dserasercyr1"
+            android:gravity="center_horizontal"
             android:text="FM Радио"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/ivRadio"
-            android:layout_width="158dp"
-            android:layout_height="183dp"
+            android:layout_width="0dp"
+            android:layout_height="201dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintBottom_toTopOf="@+id/textView3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintHorizontal_bias="0.111"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="0.195"
             app:srcCompat="@drawable/radio" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clGreen"
-        android:layout_width="166dp"
-        android:layout_height="284dp"
+        android:layout_width="171dp"
+        android:layout_height="287dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/green_screen"
@@ -124,9 +126,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:fontFamily="@font/dserasercyr1"
             android:text="Новости"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="32sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -139,7 +142,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clPurple"
         android:layout_width="0dp"
-        android:layout_height="196dp"
+        android:layout_height="192dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -149,25 +152,15 @@
         app:layout_constraintStart_toEndOf="@+id/clGreen"
         app:layout_constraintTop_toBottomOf="@+id/clBlue">
 
-        <ImageView
-            android:id="@+id/ivNote"
-            android:layout_width="0dp"
-            android:layout_height="133dp"
-            android:layout_marginTop="4dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/note" />
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:fontFamily="@font/dserasercyr1"
             android:text="Блокнот"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="32sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/ivNote"
@@ -175,11 +168,22 @@
             app:layout_constraintStart_toStartOf="@+id/ivNote"
             app:layout_constraintTop_toBottomOf="@+id/ivNote"
             app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/ivNote"
+            android:layout_width="0dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/note" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clViolet"
-        android:layout_width="218dp"
+        android:layout_width="210dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -194,13 +198,13 @@
 
         <ImageView
             android:id="@+id/ivSmile"
-            android:layout_width="219dp"
-            android:layout_height="143dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="138dp"
+            android:layout_marginTop="4dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/smile" />
 
         <TextView
@@ -208,9 +212,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:fontFamily="@font/dserasercyr1"
             android:text="Анекдоты"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="32sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/ivSmile"
@@ -227,33 +232,38 @@
         android:background="@drawable/red_screen"
         app:layout_constraintBottom_toBottomOf="@+id/clViolet"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/clViolet"
-        app:layout_constraintTop_toBottomOf="@+id/clPurple">
+        app:layout_constraintTop_toBottomOf="@+id/clPurple"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/ivGoroskop"
-            android:layout_width="153dp"
-            android:layout_height="183dp"
+            android:layout_width="0dp"
+            android:layout_height="201dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/med" />
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:fontFamily="@font/dserasercyr1"
+            android:gravity="center"
             android:text="Гороскоп"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/ivGoroskop"
-            app:layout_constraintStart_toStartOf="@+id/ivGoroskop" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
