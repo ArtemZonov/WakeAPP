@@ -21,7 +21,7 @@
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
         android:text="смешные анекдоты"
-        android:textSize="28sp"
+        android:textSize="26sp"
         android:theme="@style/text_title_activities"
         app:layout_constraintBottom_toBottomOf="@+id/ivBackSmile"
         app:layout_constraintEnd_toEndOf="parent"

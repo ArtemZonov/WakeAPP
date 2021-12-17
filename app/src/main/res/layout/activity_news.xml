@@ -17,9 +17,10 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="306dp"
+        android:layout_height="45dp"
         android:text="Свежие новости"
+        android:textSize="30sp"
         android:theme="@style/text_title_activities"
         app:layout_constraintBottom_toBottomOf="@+id/ivBackNews"
         app:layout_constraintEnd_toEndOf="parent"

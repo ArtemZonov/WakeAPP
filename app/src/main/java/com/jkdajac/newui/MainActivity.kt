@@ -89,6 +89,9 @@ class MainActivity : AppCompatActivity() {
                 .load(R.drawable.med)
                 .into(ivGoroskop);
         }
+        ivCloseApp.setOnClickListener {
+            finishAffinity()
+        }
     }
 
     override fun onResume() {

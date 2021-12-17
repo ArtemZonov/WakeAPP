@@ -11,6 +11,7 @@
         android:id="@+id/ivBackWeather"
         android:layout_width="79dp"
         android:layout_height="38dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/yellarro" />
@@ -19,6 +20,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/dserasercyr1"
         android:text="Прогноз погоды"
         android:theme="@style/text_title_activities"
@@ -28,5 +30,326 @@
         app:layout_constraintStart_toEndOf="@+id/ivBackWeather"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etEnterCity"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/dserasercyr1"
+        android:hint="Введите ваш город"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btReNewWeather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBackWeather" />
+
+    <Button
+        android:id="@+id/btReNewWeather"
+        android:layout_width="170dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#BD8128"
+        android:text="Обновить прогноз"
+        android:textSize="16sp"
+        android:theme="@style/text_title_activities"
+        app:layout_constraintBottom_toBottomOf="@+id/etEnterCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etEnterCity"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="температура воздуха:"
+        android:theme="@style/weather_details"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTemperature"
+        app:layout_constraintStart_toEndOf="@+id/ivTemperature"
+        app:layout_constraintTop_toTopOf="@+id/ivTemperature" />
+
+    <ImageView
+        android:id="@+id/ivTemperature"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivDescriptionWeather"
+        app:layout_constraintStart_toStartOf="@+id/ivDescriptionWeather"
+        app:layout_constraintTop_toBottomOf="@+id/ivDescriptionWeather"
+        tools:srcCompat="@drawable/degrees" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="-21"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/ivHumidity"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivTemperature"
+        app:layout_constraintStart_toStartOf="@+id/ivTemperature"
+        app:layout_constraintTop_toBottomOf="@+id/ivTemperature"
+        tools:srcCompat="@drawable/vlajnost" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Влажность воздуха:"
+        android:theme="@style/weather_details"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHumidity"
+        app:layout_constraintStart_toEndOf="@+id/ivHumidity"
+        app:layout_constraintTop_toTopOf="@+id/ivHumidity" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="74"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+    <ImageView
+        android:id="@+id/ivSpeedWind"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivHumidity"
+        app:layout_constraintStart_toStartOf="@+id/ivHumidity"
+        app:layout_constraintTop_toBottomOf="@+id/ivHumidity"
+        tools:srcCompat="@drawable/speedwind" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="скорость ветра:"
+        android:theme="@style/weather_details"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSpeedWind"
+        app:layout_constraintStart_toEndOf="@+id/ivSpeedWind"
+        app:layout_constraintTop_toTopOf="@+id/ivSpeedWind" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="8"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+    <ImageView
+        android:id="@+id/ivSideWind"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivSpeedWind"
+        app:layout_constraintStart_toStartOf="@+id/ivSpeedWind"
+        app:layout_constraintTop_toBottomOf="@+id/ivSpeedWind"
+        tools:srcCompat="@drawable/wind" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Направление ветра:"
+        android:theme="@style/weather_details"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSideWind"
+        app:layout_constraintStart_toEndOf="@+id/ivSideWind"
+        app:layout_constraintTop_toTopOf="@+id/ivSideWind" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="c/в"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="м/с"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="%"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="0"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:theme="@style/weather_value"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="C"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <ImageView
+        android:id="@+id/ivMayBeWeather"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivSideWind"
+        app:layout_constraintStart_toStartOf="@+id/ivSideWind"
+        app:layout_constraintTop_toBottomOf="@+id/ivSideWind"
+        tools:srcCompat="@drawable/veroyatnost" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="вероятность осадков:"
+        android:theme="@style/weather_details"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMayBeWeather"
+        app:layout_constraintStart_toEndOf="@+id/ivMayBeWeather"
+        app:layout_constraintTop_toTopOf="@+id/ivMayBeWeather" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="23"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="%"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+    <ImageView
+        android:id="@+id/ivDescriptionWeather"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/etEnterCity"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterCity"
+        tools:srcCompat="@drawable/dojd" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="пасмурно"
+        android:theme="@style/weather_details"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDescriptionWeather"
+        app:layout_constraintStart_toEndOf="@+id/ivDescriptionWeather"
+        app:layout_constraintTop_toTopOf="@+id/ivDescriptionWeather" />
+
+    <ImageView
+        android:id="@+id/ivMoon"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivMayBeWeather"
+        app:layout_constraintStart_toStartOf="@+id/ivMayBeWeather"
+        app:layout_constraintTop_toBottomOf="@+id/ivMayBeWeather"
+        tools:srcCompat="@drawable/mooon" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="лунные сутки:"
+        android:theme="@style/weather_details"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMoon"
+        app:layout_constraintStart_toEndOf="@+id/ivMoon"
+        app:layout_constraintTop_toTopOf="@+id/ivMoon"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="7"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-е"
+        android:theme="@style/weather_value"
+        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+    <ImageView
+        android:id="@+id/ivPrognoz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/image_corners"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMoon"
+        app:srcCompat="@drawable/prognoztwo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
