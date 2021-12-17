@@ -8,10 +8,12 @@ import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
 import com.jkdajac.newui.R
 import com.jkdajac.newui.adapter.NoteAdapter
 import com.jkdajac.newui.database.AppDatabase
 import com.jkdajac.newui.database.Note
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_note.*
 
 class NoteActivity : AppCompatActivity(), NoteAdapter.ViewHolder.ItemCallback {
@@ -45,6 +47,10 @@ class NoteActivity : AppCompatActivity(), NoteAdapter.ViewHolder.ItemCallback {
 
             overridePendingTransition(R.anim.back_alpha, R.anim.back_diagonal_translate)
         }
+        Glide.with(this)
+            .asGif()
+            .load(R.drawable.backnote)
+            .into(ivBackNote);
 
         floatNote.setOnClickListener {
             val intent = Intent(this, EditNoteActivity::class.java)

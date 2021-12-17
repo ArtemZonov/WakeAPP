@@ -7,4 +7,22 @@
     android:background="#43B3E6"
     tools:context=".radio.RadioActivity">
 
+    <ImageView
+        android:id="@+id/ivBackRadio"
+        android:layout_width="63dp"
+        android:layout_height="38dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unnamed" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FM Радио"
+        android:theme="@style/text_title_activities"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBackRadio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBackRadio"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

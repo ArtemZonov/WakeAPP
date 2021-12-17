@@ -7,4 +7,24 @@
     android:background="#712EE4"
     tools:context=".smile.SmileActivity">
 
+    <ImageView
+        android:id="@+id/ivBackSmile"
+        android:layout_width="66dp"
+        android:layout_height="33dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/giphy" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:text="смешные анекдоты"
+        android:textSize="28sp"
+        android:theme="@style/text_title_activities"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBackSmile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBackSmile"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

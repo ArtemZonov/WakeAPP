@@ -7,4 +7,24 @@
     android:background="#2CD307"
     tools:context=".news.NewsActivity">
 
+    <ImageView
+        android:id="@+id/ivBackNews"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/strelkagreen" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Свежие новости"
+        android:theme="@style/text_title_activities"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBackNews"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivBackNews"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
